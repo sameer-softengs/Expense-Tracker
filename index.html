@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Smart Expense Tracker</h1>
+      <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+    <section class="expense-form">
+      <input type="number" id="amount" placeholder="Amount" required>
+      <select id="category" required>
+        <option value="food">Food</option>
+        <option value="rent">Rent</option>
+        <option value="education">Education</option>
+        <option value="entertainment">Entertainment</option>
+      </select>
+      <input type="date" id="date" required>
+      <button id="add-expense">Add Expense</button>
+    </section>
+    <section class="filters">
+      <select id="filter-category">
+        <option value="all">All Categories</option>
+        <option value="food">Food</option>
+        <option value="rent">Rent</option>
+        <option value="education">Education</option>
+        <option value="entertainment">Entertainment</option>
+      </select>
+      <select id="currency-selector">
+        <option value="USD">$ USD</option>
+        <option value="EUR">€ EUR</option>
+        <option value="INR">₹ INR</option>
+        <option value="PKR">Rs PKR</option>
+      </select>
+    </section>
+    <section class="expense-list">
+      <ul id="expense-list"></ul>
+    </section>
+    <section class="summary-dashboard">
+      <h3>Total Expenses: <span id="total-expenses">0</span> <span id="currency-symbol">$</span></h3>
+      <canvas id="expense-chart"></canvas>
+    </section>
+    <section class="sharing">
+      <button id="share-button">Share Monthly Summary</button>
+      <button id="export-button">Export as CSV</button>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
