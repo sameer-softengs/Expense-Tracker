@@ -1,0 +1,9 @@
+{
+  "name": "Valuebox Expense Tracker",
+  "short_name": "Valuebox",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f3ed",
+  "theme_color": "#20221f",
+  "description": "A calmer, clearer way to understand your spending."
+}

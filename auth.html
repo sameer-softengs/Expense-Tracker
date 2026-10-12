@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e9e5dc">
+  <title>Sign in to Valuebox</title>
+  <meta name="description" content="Sign in to your private Valuebox expense tracking workspace by Muhammad Sameer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="marketing.css">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-body">
+  <main class="auth-layout">
+    <a class="brand auth-brand" href="index.html"><span class="brand-mark">✦</span><span>valuebox</span></a>
+    <section class="auth-card" aria-labelledby="auth-title">
+      <div class="auth-intro">
+        <p class="eyebrow">Your private workspace</p>
+        <h1 id="auth-title">Welcome<br><em>back.</em></h1>
+        <p>Sign in to see your spending rhythm, budget runway, and personal insights.</p>
+      </div>
+      <div id="clerk-auth" aria-live="polite"><p class="clerk-loading">Loading secure sign in…</p></div>
+      <div id="auth-setup" class="setup-note" hidden></div>
+    </section>
+    <p class="auth-back"><a href="index.html">← Back to Valuebox</a><span>Private by design</span></p>
+  </main>
+  <script>document.title="Sign in to Valuebox";</script>
+  <script src="auth.js?v=clerk7"></script>
+</body>
+</html>

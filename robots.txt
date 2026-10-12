@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /app.html
+
+# Replace YOUR_PUBLIC_DOMAIN before production deployment.
+Sitemap: https://YOUR_PUBLIC_DOMAIN/sitemap.xml
